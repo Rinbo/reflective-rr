@@ -9,7 +9,7 @@
         <div class="post-section">
             <%= link_to post_path(post) do %>            	 
               <% unless post.image.url == '/images/original/missing.png' %>
-                <div><center><%= image_tag(post.image.url, class: 'img-size') %></div>                
+                <div><%= image_tag(post.image.url, class: 'img-size') %></div>                
               <% end %>
               <h3><%= post.title %></h3>                  	
             <% end %>
@@ -20,8 +20,8 @@
         </div>
     <% end %>
     <div class="post-section">
-      <%= link_to 'Older Posts' do %>
-        <h4>Older Posts</h4>
+      <%= link_to '/allposts/allshow' do %>
+        <h4>All Posts</h4>
       <% end %>
     </div>
 </section>

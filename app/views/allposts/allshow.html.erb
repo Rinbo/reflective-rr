@@ -1,0 +1,11 @@
+<section class="body-text"> 
+	<div class="post-section">
+		<h2>All Posts</h2>           
+	    <% @posts.each do |post| %>        
+	            <%= link_to post_path(post) do %>            	 
+	                <h3><%= post.title %></h3>                  	
+	            <% end %>
+	            <p class="date-text">Posted By Robin Börjesson on <%= post.created_at %></p>   
+	    <% end %>
+    </div>
+</section>
