@@ -1,0 +1,30 @@
+
+<div class="header-text">
+      <div><%= image_tag 'profile_gray.png' %></div>
+      <div><h1><center>Reflective Regression<br>Repository</h1></center></div>
+</div>
+    
+<section class="body-text">            
+    <% @posts.first(3).each do |post| %>
+        <div class="post-section">
+            <%= link_to post_path(post) do %>            	 
+              <% unless post.image.url == '/images/original/missing.png' %>
+                <div><center><%= image_tag(post.image.url, class: 'img-size') %></div>                
+              <% end %>
+              <h3><%= post.title %></h3>                  	
+            <% end %>
+
+            <p class="date-text"><i>Posted By Robin Börjesson on <%= post.created_at %></i></p>
+            <p><%= markdown(post.body) %></p>
+            <hr>
+        </div>
+    <% end %>
+    <div class="post-section">
+      <%= link_to 'Older Posts' do %>
+        <h4>Older Posts</h4>
+      <% end %>
+    </div>
+</section>
+
+
+    

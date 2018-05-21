@@ -1,0 +1,9 @@
+<section class="body-text">    
+  <div class="post-section">
+    <div><%= image_tag(@post.image.url, class: 'img-size') %></div>
+    <h3><%= @post.title %></h3>
+     <p class="date-text"><i>Posted By Robin Börjesson on <%= @post.created_at %></i></p>
+     <p><%= markdown(@post.body) %></p>
+  </div>
+  <div class="post-section">    
+</section>
