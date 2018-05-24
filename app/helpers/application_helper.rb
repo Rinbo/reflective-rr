@@ -1,9 +1,15 @@
 module ApplicationHelper
-	require 'redcarpet/compat'
-	#option = [hard_wrap: true, prettify: true, fenced_code_blocks: true, autolink: true, quote: true, highlight: true]
+require 'redcarpet/compat'
+require 'rouge'
+require 'rouge/plugins/redcarpet' 
+
+	class CustomRender < Redcarpet::Render::HTML
+	  include Rouge::Plugins::Redcarpet
+	end
+
 	def markdown(text)
-		markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, hard_wrap: true, prettify: true, fenced_code_blocks: true, autolink: true, quote: true, highlight: true)
-		return markdown.render(text).html_safe
+		parser = Redcarpet::Markdown.new(CustomRender, hard_wrap: true, prettify: true, fenced_code_blocks: true, autolink: true, quote: true, highlight: true, disable_indented_code_blocks: true, lax_spacing: true)
+		return parser.render(text).html_safe
 	end
 
 end

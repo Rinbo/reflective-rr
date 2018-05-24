@@ -22,6 +22,9 @@ gem 'paperclip'
 gem 'redcarpet'
 gem 'jquery-rails'
 gem 'popper_js'
+gem 'albino'
+gem 'nokogiri'
+gem 'rouge'
 #gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :production do
