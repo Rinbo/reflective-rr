@@ -18,14 +18,15 @@ gem 'activeadmin'
 gem 'inherited_resources', '~> 1.8'
 gem 'bcrypt'
 gem 'active_skin'
-gem 'paperclip'
+gem 'paperclip', '~> 5.0'
 gem 'redcarpet'
 gem 'jquery-rails'
 gem 'popper_js'
 gem 'albino'
 gem 'nokogiri'
 gem 'rouge'
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '~> 2.3'
+#gem 'aws-sdk-s3', '~> 1'
 gem 'figaro'
 #gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
@@ -40,6 +41,7 @@ end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+
 end
 
 group :test do
