@@ -1,7 +1,7 @@
 <section class="body-text">    
   <div class="post-section">
-    <% unless post.image.url == '/images/original/missing.png' %>
-		<div><%= image_tag(post.image.url, class: 'img-size') %></div>                
+    <% unless @post.image.url == '/images/original/missing.png' %>
+		<div><%= image_tag(@post.image.url, class: 'img-size') %></div>                
 	<% end %>
     <h3><%= @post.title %></h3>
      <p class="date-text"><i>Posted By Robin Börjesson on <%= @post.created_at %></i></p>
