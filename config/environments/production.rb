@@ -14,6 +14,7 @@ Rails.application.configure do
     }
   }
 
+  config.assets.precompile += %w( active_admin.css active_admin.js active_admin/print.css)
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
