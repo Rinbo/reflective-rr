@@ -26,6 +26,7 @@ gem 'albino'
 gem 'nokogiri'
 gem 'rouge'
 gem 'aws-sdk', '~> 2'
+gem 'figaro'
 #gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :production do
