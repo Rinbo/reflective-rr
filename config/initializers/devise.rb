@@ -20,7 +20,7 @@ Devise.setup do |config|
   # with default "from" parameter.
   
   config.mailer_sender = 'robin.b@outlook.com'
-  config.secret_key = ''
+  
   
 
   # Configure the class responsible to send e-mails.
