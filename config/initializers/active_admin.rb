@@ -141,6 +141,11 @@ ActiveAdmin.setup do |config|
   #
   config.batch_actions = true
 
+
+  config.namespace :admin do |admin|
+    admin.batch_actions = true
+  end
+
   # == Controller Filters
   #
   # You can add before, after and around filters to all of your
