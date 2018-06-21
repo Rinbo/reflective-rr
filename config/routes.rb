@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'allposts/allshow'
+  get 'dodgers/dodgers'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
