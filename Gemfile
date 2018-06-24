@@ -28,6 +28,8 @@ gem 'rouge'
 gem 'aws-sdk', '~> 3'
 #gem 'aws-sdk-s3', '~> 1'
 gem 'figaro'
+gem 'sprockets'
+gem 'webpacker'
 #gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :production do
