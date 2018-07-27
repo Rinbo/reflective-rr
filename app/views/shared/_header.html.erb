@@ -2,9 +2,12 @@
 	<div class="container">
 	  <div class = "header-text">
 	  	<div class = "grid-container">
-	  		<div class = "col-left"><%= link_to "HOME", '/posts/index' %></div>	      	
-	      	<div class = "col-right"><%= link_to("POSTS", '/allposts/allshow') %> | <%=mail_to("robin.b@outlook.com", "CONTACT", subject: "Hi! Please include your name and email address") %></div>		      	
+	  		<div class = "col-left"><%= link_to "RR-REPO", '/posts/index' %></div>	      	
+	      	<div class = "col-right"><%= link_to("POSTS", '/allposts/allshow') %> | 	      		
+	      		<%=mail_to("robin.b@outlook.com", 
+	      		"CONTACT", subject: "Hi! Please include your name and email address") %>
+	      	</div>		      	
 	    </div>
-	  </div>
+	  </div> 
 	</div>
 </div>
