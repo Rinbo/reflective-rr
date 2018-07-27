@@ -1,6 +1,8 @@
 ActiveAdmin.register Post do
 	permit_params :title, :body, :image
+	actions :index, :show, :new, :create, :update, :edit, :destroy
 	config.batch_actions = true
+
 	
 	show do |t|
 		attributes_table do
