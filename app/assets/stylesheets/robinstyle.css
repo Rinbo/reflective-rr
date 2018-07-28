@@ -1,4 +1,7 @@
-
+    :root {
+        --background: #27434a;
+    }
+    
     h1 {
 	  	font-size: 48px;
 		font-family: Monospace;		
@@ -40,9 +43,8 @@
         display: block;
         height: 2px;
         border: 0;
-        border-color: #000000;
-        background-color: #000000;
-        color: #000000;
+        border-color: #A9A9A9;
+        background-color: #A9A9A9;        
         margin-left: 15%;
         margin-right: 15%;
         margin-bottom: 0%;    
@@ -50,7 +52,7 @@
 
     
     html {
-        background-color: #000000;
+        background-color: var(--background);
     }
 
     a:link {
@@ -66,7 +68,7 @@
     }
 
     body {
-        background-color: #000000;        
+        background-color: var(--background);        
     }   
 
     p {
@@ -100,12 +102,13 @@
     }
 
     .container {
-        margin: 2px;       
+        margin: 5px;       
         max-width: 1000px;
         background-color: #102930;
         padding: 1%;        
         text-align: center;        
-        border: 1px solid #A9A9A9;        
+        border: 1px solid #A9A9A9;
+        box-shadow: 0px 5px 40px #171030;        
     }
 
     .post-section {        
