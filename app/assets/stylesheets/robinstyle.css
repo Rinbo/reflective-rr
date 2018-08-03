@@ -71,7 +71,7 @@
         background-color: var(--background);        
     }   
 
-    p {
+    p, ul, li {
         color: #A9A9A9;
         font-size: 14px;
         font-weight: bold;
