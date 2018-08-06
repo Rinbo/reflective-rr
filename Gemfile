@@ -26,11 +26,11 @@ gem 'albino'
 gem 'nokogiri'
 gem 'rouge'
 gem 'aws-sdk', '~> 3'
-#gem 'aws-sdk-s3', '~> 1'
 gem 'figaro'
 gem 'sprockets'
 gem 'webpacker'
-#gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'sitemap_generator'
+
 
 group :production do
 	gem 'pg'
