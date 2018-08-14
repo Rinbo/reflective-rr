@@ -77,6 +77,10 @@
         font-weight: bold;
     }
 
+    li > a:link {
+        text-decoration: underline;
+    }
+    
     pre {
         padding: 1%;
     }
